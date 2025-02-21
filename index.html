@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<title>REFLOW-TTS: A RECTIFIED FLOW MODEL FOR HIGH-FIDELITY TEXT-TO-SPEECH</title>
+	<title>ReFlow-VC: Zero-shot Voice Conversion Based on Rectified Flow and Speaker Feature Optimization</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -63,8 +63,7 @@
 <!--   <div class="centered-link">
     <a href="https://github.com/">CODE LINK</a>
   </div> -->
-  <p style="text-align: justify;"><font color="061E61"> The Diffusion models including Denoising Diffusion Probabilistic Models (DDPM) and score-based generative models have demonstrated excellent performance in speech synthesis tasks. However, its effectiveness comes at the cost of numerous sampling steps, resulting in prolonged sampling time required to synthesize high-quality speech. This drawback hinders its practical applicability in real-world scenarios. In this paper, we introduce ReFlow-TTS, a novel rectified flow based method for speech synthesis with high-fidelity. Specifically, our ReFlow-TTS is simply an Ordinary Differential Equation (ODE) model that transports Gaussian distribution to the ground-truth Mel-spectrogram distribution by straight line paths as much as possible.
-Furthermore, our proposed approach enables high-quality speech synthesis with a single sampling step and eliminates the need for training a teacher model. Our experiments on LJSpeech Dataset show that our ReFlow-TTS method achieves the best performance compared with other diffusion based models. And the ReFlow-TTS with one step sampling achieves competitive performance compared with existing one-step TTS models.</font></p>
+  <p style="text-align: justify;"><font color="061E61"> In recent years, diffusion-based generative models have demonstrated remarkable performance in speech conversion, including Denoising Diffusion Probabilistic Models (DDPM) and others. However, the advantages of these models come at the cost of requiring a large number of sampling steps. This limitation hinders their practical application in real-world scenarios. In this paper, we introduce ReFlow-VC, a novel high-fidelity speech conversion method based on rectified flow.Specifically, ReFlow-VC is an Ordinary Differential Equation (ODE) model that transforms a Gaussian distribution to the true Mel-spectrogram distribution along the most direct path. Furthermore, we propose a modeling approach that optimizes speaker features by utilizing both content and pitch information, allowing speaker features to reflect the properties of the current speech more accurately. Experimental results show that ReFlow-VC performs exceptionally well in small datasets and zero-shot scenarios.</font></p>
   <!-- <br></br> -->
   <!-- <br></br> -->
 </div>
